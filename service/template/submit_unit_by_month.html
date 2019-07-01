@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+</head>
+<body
+        style="position: relative;width: 21cm;height: 29.7cm;margin: 0 auto;color: #001028;background: #FFFFFF;font-family: Arial;font-size: 12px;">
+<header class="clearfix" style="padding: 10px 0;margin-bottom: 30px;">
+
+    <h1 style="border-top: 1px solid  #5D6975;border-bottom: 1px solid  #5D6975;color: #5D6975;font-size: 2.4em;line-height: 2.4em;font-weight: normal;text-align: center;margin: 0 0 20px 0;background: url(dimension.png);">
+        ใบแจ้งหนี้</h1>
+
+    <div id="project" style="float: left;">
+        <div style="white-space: nowrap;text-align: center">
+            ประจำเดือน [DATE_DESCRIPTION]
+        </div>
+        <div style="white-space: nowrap;"><span
+                style="color: #5D6975;text-align: right;width: 52px;margin-right: 10px;display: inline-block;font-size: 0.8em;">NAME</span>
+            [CUSTOMER_NAME]
+        </div>
+        <div style="white-space: nowrap;"><span
+                style="color: #5D6975;text-align: right;width: 52px;margin-right: 10px;display: inline-block;font-size: 0.8em;">PHONE</span>
+            [PHONE]
+        </div>
+        <div style="white-space: nowrap;"><span
+                style="color: #5D6975;text-align: right;width: 52px;margin-right: 10px;display: inline-block;font-size: 0.8em;">EMAIL</span>
+            [EMAIL]
+        </div>
+        <div style="white-space: nowrap;"><span
+                style="color: #5D6975;text-align: right;width: 52px;margin-right: 10px;display: inline-block;font-size: 0.8em;">ADDRESS</span>
+            [ADDRESS]
+        </div>
+    </div>
+</header>
+<table style="width: 100%;border-collapse: collapse;border-spacing: 0;margin-bottom: 20px;">
+    <thead>
+    <tr>
+        <th class="service"
+            style="text-align: left;padding: 5px 20px;color: #5D6975;border-bottom: 1px solid #C1CED9;white-space: nowrap;font-weight: normal;">
+            SERVICE
+        </th>
+        <th style="text-align: right;padding: 5px 20px;color: #5D6975;border-bottom: 1px solid #C1CED9;white-space: nowrap;font-weight: normal;">
+            PRICE
+        </th>
+        <th style="text-align: right;padding: 5px 20px;color: #5D6975;border-bottom: 1px solid #C1CED9;white-space: nowrap;font-weight: normal;">
+            QTY
+        </th>
+        <th style="text-align: right;padding: 5px 20px;color: #5D6975;border-bottom: 1px solid #C1CED9;white-space: nowrap;font-weight: normal;">
+            TOTAL
+        </th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td class="service" style="text-align: left;padding: 20px;vertical-align: top;">ค่าห้องพัก</td>
+        <td class="unit"
+            style="text-align: right;padding: 20px;font-size: 1.2em;">[ROOM_PRICE]</td>
+        <td class="qty" style="text-align: right;padding: 20px;font-size: 1.2em;">1</td>
+        <td class="total"
+            style="text-align: right;padding: 20px;font-size: 1.2em;">[ROOM_PRICE]</td>
+    </tr>
+    <tr>
+        <td class="service" style="text-align: left;padding: 20px;vertical-align: top;">ค่าน้ำ</td>
+        <td class="unit"
+            style="text-align: right;padding: 20px;font-size: 1.2em;">[WATER_PRICE]</td>
+        <td class="qty"
+            style="text-align: right;padding: 20px;font-size: 1.2em;">[WATER_TOTAL_UNIT]</td>
+        <td class="total"
+            style="text-align: right;padding: 20px;font-size: 1.2em;">[WATER_TOTAL_PRICE]</td>
+    </tr>
+    <tr>
+        <td class="service" style="text-align: left;padding: 20px;vertical-align: top;">ค่าไฟ</td>
+        <td class="unit"
+            style="text-align: right;padding: 20px;font-size: 1.2em;">[ELECTRICITY_PRICE]</td>
+        <td class="qty"
+            style="text-align: right;padding: 20px;font-size: 1.2em;">[ELECTRICITY_TOTAL_UNIT]</td>
+        <td class="total"
+            style="text-align: right;padding: 20px;font-size: 1.2em;">[ELECTRICITY_TOTAL_PRICE]</td>
+    </tr>
+    <tr>
+        <td class="grand total" colspan="4"
+            style="text-align: right;padding: 20px;font-size: 1.2em;border-top: 1px solid #5D6975;">[TOTAL_PRICE]
+            <br><br>
+            ( [THAI_BATH_DESCRIPTION] )
+        </td>
+    </tr>
+    </tbody>
+</table>
+<div id="notices">
+
+</div>
+</body>
+</html>

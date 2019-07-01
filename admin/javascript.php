@@ -1,0 +1,14 @@
+<script src="../plugins/jQuery/jQuery-2.1.4.min.js"></script>
+<script src="../bootstrap/js/bootstrap.min.js"></script>
+<script src="../plugins/select2/select2.full.min.js"></script>
+<script src="../plugins/daterangepicker/daterangepicker.js"></script>
+<script src="../plugins/colorpicker/bootstrap-colorpicker.min.js"></script>
+<script src="../plugins/timepicker/bootstrap-timepicker.min.js"></script>
+<script src="../plugins/slimScroll/jquery.slimscroll.min.js"></script>
+<script src="../plugins/iCheck/icheck.min.js"></script>
+<script src="../plugins/fastclick/fastclick.min.js"></script>
+<script src="../plugins/ckeditor/ckeditor.js"></script>
+<script src="../dist/js/app.min.js"></script>
+<script src="../dist/js/demo.js"></script>
+<script src="../js/screen.js"></script>
+<script src="../js/jquery.datetimepicker.js"></script>

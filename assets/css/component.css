@@ -1,0 +1,90 @@
+
+.component {
+    max-height: 400px;
+    overflow: hidden;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    background: #fff;
+}
+
+td, th {
+    text-align: left;
+}
+
+th {
+    border: solid thin #ccc;
+    background-color: #E8E8E8;
+    text-align: center;
+    padding: 2px;
+}
+
+tbody tr:nth-child(2n-1) {
+    transition: all .125s ease-in-out;
+}
+
+/* For appearance */
+.sticky-wrap {
+    overflow-x: auto;
+    overflow-y: hidden;
+    position: relative;
+    /*margin: 3em 0;*/
+    width: 100%;
+}
+.sticky-wrap .sticky-col{
+    opacity: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0;
+    transition: all .125s ease-in-out;
+    z-index: 50;
+    width: auto; /* Prevent table from stretching to full size */
+}
+
+.sticky-wrap .sticky-thead,
+.sticky-wrap .sticky-intersect {
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0;
+    transition: all .125s ease-in-out;
+    z-index: 50;
+    width: auto; /* Prevent table from stretching to full size */
+}
+
+.sticky-wrap .sticky-thead {
+    z-index: 100;
+}
+
+.sticky-wrap .sticky-intersect {
+    opacity: 1;
+    z-index: 150;
+
+}
+
+.sticky-wrap .sticky-intersect th {
+    border: solid thin #ccc;
+    background-color: #E8E8E8;
+    text-align: center;
+    padding: 2px;
+}
+
+.sticky-wrap td,
+.sticky-wrap th {
+    box-sizing: border-box;
+}
+
+/* Not needed for sticky header/column functionality */
+td.user-name {
+    text-transform: capitalize;
+}
+
+.sticky-wrap.overflow-y {
+    overflow-y: auto;
+    max-height: 400px;
+}
+
